@@ -1,3 +1,41 @@
+ul {
+  list-style: none;
+}
+  
+/* контейнер */
+  
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid green
+}
+
+:root {
+  --primary-text-color: #757575;
+  --footer-back: #2f303a;
+  --white-text-collor: #ffffff;
+  --h-collor: #212121;
+  --link-collor: #2196f3;
+  --header-back: #ececec;
+  --social-icon: #AFB1B8;
+  --team-back: #F5F4FA;
+  --back: rgba(255,255,255,0.1);
+  --transition-color: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-background: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-shadow: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .header {
   background-color: orange ;
 }
@@ -10,6 +48,12 @@
   display: flex;
 }
 
+.header-logo{
+  width: 100px;
+  height: 100px;
+  
+}
+
 .text {
   color: blue;
   background-color: burlywood;
@@ -19,4 +63,95 @@
 
 .test-link {
   color: black;
+}
+
+.hero-section{
+  padding-top: 94px;
+  height: 600px;
+  background-color: #2F303A;
+}
+
+.hero-title{
+  text-align: center; 
+  
+  padding-top: 200px;
+  margin-bottom: 30px;
+  margin-top: 0px;
+  
+    /* outline: 1px solid green; */
+  
+  color: var(--white-text-collor);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.text{
+  text-align: center;
+  color: var(--white-text-collor) ;
+}
+
+.about-us{
+  padding-top: 94px;
+}
+
+.about-title{
+  text-align: center;
+  
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--h-collor);
+}
+
+
+.team-card{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.team-card-box{
+  /* outline: 1px solid #008000; */
+  background-color: var(--white-text-collor);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.name{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 0px;
+ 
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18; 
+  color: var(--h-collor);
+}
+
+.card-image{
+  height: 400px;
+}
+
+.profession{
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.18;
+
+
+  text-align: center;
+  letter-spacing: 0.03em; 
+  color: var(-primary-text-color);
 }

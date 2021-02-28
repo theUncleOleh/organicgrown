@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Organicgrown</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css" integrity="sha512-Zx6MlUMKSVJoQ+83OwhdILe8cSEsCzfqThJd7J/VA2UrK6Ctj85p+xzqfyuNXE5B1k25uUdmJ2OzItbBy9GHAQ==" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
-    
-    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css" integrity="sha512-Zx6MlUMKSVJoQ+83OwhdILe8cSEsCzfqThJd7J/VA2UrK6Ctj85p+xzqfyuNXE5B1k25uUdmJ2OzItbBy9GHAQ==" crossorigin="anonymous" /> 
     <link rel="stylesheet" href="./css/styles.css">
+    
 </head>
 <body> 
     <header class="header">
-    
-        <img src="./images/OG.jpg"  alt="logo">
+    <div class="container" >
+        <img class="header-logo" src="./images/OG.jpg"  alt="logo">
         <a href="OG">OG</a>
             <ul class="header-nav" >
                 <li class="header-site-link" >
@@ -45,7 +45,7 @@
                 <li  class="header-social-nav" >
                     <a href="#">
                          <svg  class="link-icon"> 
-                             <use href="./images/symbol-defs.svg#icon-faceboo1k" >
+                             <use href="./images/symbol-defs.svg#icon-faceboo1k" width="12px" height="16px">
                             </use>
                         </svg>Facebook</a>
                 </li><li  class="header-social-nav" >
@@ -55,18 +55,30 @@
                     </svg>linkedin</a>
                 </li>
                 </ul>
+            </div>
     </header>
     <main>
-         <section>
-             <div>
-              <h1>OrganicGrown</h1>
-              <h2 class="text">We're taking pictures of our dream</h2>
+         <section  class="hero-section">
+             <div  class="container">
+              <h1 class="hero-title" >OrganicGrown</h1>
+              <h2 class="text">We're taking pictures<br> of our dream</h2>
               <a href="Заказать фотосет">Заказать фотосет</a>
              </div>
          </section>
-         <section>
-                <h2>About us</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, enim!</p>
+         <section class="about-us" > 
+                <h2 class="about-title" >About us</h2> 
+                <ul class="team-card" >
+                    <li class="team-card-box" >
+                <img class="card-image" src="./images/IMG_4415.jpg" width="370px" alt=" чувак у машины"> 
+                <h3 class="name" >Vito</h3>
+                <p class="profession" > Photographer</p>
+            </li>
+            <li class="team-card-box" >
+                <img  class="card-image" src="./images/IMG_6864.jpg" width="370px" alt="артем"> 
+                <h3 class="name" >Artem</h3>
+                <p class="profession"  >Photographer </p>
+            </li>
+            </ul>
          </section>
          <section>
                 <h2>Photo gallery</h2>
